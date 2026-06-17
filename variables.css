@@ -1,0 +1,22 @@
+:root {
+  /* Backgrounds */
+  --bg-primary: #0b111e;
+  --bg-card: #151f32;
+
+  /* Text */
+  --text-primary: #ffffff;
+  --text-muted: #94a3b8;
+
+  /* Accent */
+  --accent: #ff6b57;
+
+  /* Border */
+  --border-subtle: rgba(255, 107, 87, 0.2);
+
+  /* Spacing */
+  --section-padding: 80px 0;
+  --container-width: 1100px;
+
+  /* Transition */
+  --transition: all 0.3s ease;
+}
