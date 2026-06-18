@@ -7,10 +7,7 @@
     <meta name="author" content="Babloo Kushwaha" />
     <title>Babloo Kushwaha | Full-Stack Developer</title>
 
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/navbar.css" />
@@ -24,34 +21,45 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
-<header id="navbar">
-  <nav class="nav-container">
-    <div class="nav-logo">
-      Babloo Kushwaha
-    </div>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#core-grid">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contacts</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-</header>
 
     <!-- NAVBAR -->
     <header id="navbar">
       <nav class="nav-container">
+        <div class="nav-logo">Babloo Kushwaha</div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#core-grid">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </header>
 
     <!-- HERO -->
     <section id="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1 class="hero-greeting">Hello<span class="dot">.</span></h1>
+          <p class="hero-sub">I'm Babloo</p>
+          <h2 class="hero-title">Full-Stack Developer</h2>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">Hire Me</a>
+            <a href="#" class="btn-outline">View Resume</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-ring">
+            <span class="code-symbol left">&lt;</span>
+            <img src="babloo.jpg" alt="Babloo Kushwaha" />
+            <span class="code-symbol right">&gt;</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- TECH BAR -->
@@ -78,7 +86,6 @@
     <footer id="footer">
     </footer>
 
-    <!-- JS -->
     <script src="js/navbar.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/contact.js"></script>
