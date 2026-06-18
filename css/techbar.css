@@ -1,0 +1,41 @@
+#techbar {
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 20px 0;
+}
+
+.techbar-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.techbar-container span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.techbar-container span:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .techbar-container {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .techbar-container span {
+    font-size: 0.8rem;
+  }
+}
