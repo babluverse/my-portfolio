@@ -1,0 +1,80 @@
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+  padding: 20px 0;
+  border-right: 1px solid var(--border-subtle);
+  padding-right: 48px;
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.service-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--border-subtle);
+}
+
+.service-item:hover::before {
+  background-color: var(--accent);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.service-item:hover .service-icon {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.service-icon i {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.service-item:hover .service-icon i {
+  color: var(--accent);
+}
+
+.service-text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.service-text p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  #services {
+    border-right: none;
+    border-bottom: 1px solid var(--border-subtle);
+    padding-right: 0;
+    padding-bottom: 40px;
+  }
+}
