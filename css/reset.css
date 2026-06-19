@@ -36,3 +36,22 @@ button {
   outline: none;
   font-family: inherit;
 }
+/* ── Selection Color ── */
+::selection {
+  background-color: rgba(255, 107, 87, 0.3);
+  color: #ffffff;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}

@@ -21,3 +21,8 @@
   /* Transition */
   --transition: all 0.3s ease;
 }
+
+/* ── Scroll padding for fixed navbar ── */
+html {
+  scroll-padding-top: 80px;
+}
