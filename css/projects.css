@@ -1,0 +1,150 @@
+#projects {
+  padding: var(--section-padding);
+  background-color: var(--bg-primary);
+}
+
+.projects-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Section Header ── */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.section-line {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--accent);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* ── Project Card ── */
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.project-card.reverse {
+  direction: rtl;
+}
+
+.project-card.reverse > * {
+  direction: ltr;
+}
+
+/* ── Project Info ── */
+.project-info h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.project-tags span {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+  padding: 4px 10px;
+  border-radius: 20px;
+  transition: var(--transition);
+}
+
+.project-tags span:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-link {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.project-link:hover {
+  color: var(--accent);
+}
+
+/* ── Code Preview ── */
+.code-preview {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 28px;
+  overflow: hidden;
+}
+
+.code-preview pre {
+  margin: 0;
+  overflow-x: auto;
+}
+
+.code-preview code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  color: #a8d8a8;
+  line-height: 1.7;
+  white-space: pre;
+}
+
+/* ── Core Grid Layout ── */
+#core-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+  gap: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 50px;
+  }
+
+  .project-card.reverse {
+    direction: ltr;
+  }
+
+  #core-grid {
+    grid-template-columns: 1fr;
+  }
+}
