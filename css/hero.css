@@ -136,14 +136,15 @@
   font-family: monospace;
   top: 50%;
   transform: translateY(-50%);
+  z-index: -1;
 }
 
 .code-symbol.left {
-  left: -36px;
+  left: -48px;
 }
 
 .code-symbol.right {
-  right: -36px;
+  right: -48px;
 }
 
 /* ── Responsive ── */
