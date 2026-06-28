@@ -8,6 +8,8 @@
     <title>Babloo Kushwaha | Full-Stack Developer</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/navbar.css" />
@@ -225,7 +227,7 @@ renderProducts(products);</code></pre>
   </div>
 </section>
 
-    <!-- CONTACT -->
+   <!-- CONTACT -->
 <section id="contact">
   <div class="contact-container">
 
@@ -236,16 +238,18 @@ renderProducts(products);</code></pre>
     </div>
 
     <div class="contact-right">
-      <div class="form-group">
-        <input type="text" placeholder="Name" class="form-input" />
-      </div>
-      <div class="form-group">
-        <input type="email" placeholder="Email" class="form-input" />
-      </div>
-      <div class="form-group">
-        <textarea placeholder="Project Description" class="form-input form-textarea"></textarea>
-      </div>
-      <button class="btn-primary" type="button">Send Message</button>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" id="contact-name" placeholder="Name" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="contact-email" placeholder="Email" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <textarea id="contact-message" placeholder="Project Description" class="form-input form-textarea" required></textarea>
+        </div>
+        <button class="btn-primary" type="submit" id="submit-btn">Send Message</button>
+      </form>
     </div>
 
   </div>
